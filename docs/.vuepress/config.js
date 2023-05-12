@@ -26,52 +26,74 @@ module.exports = {
         ],
       },
       {
-        title: 'Typescript',
-        // path: '/base/',
-        // collapsable: false,
+        title: '业务',
+        collapsable: false,
         children: [
           {
-            title: '简介',
-            path: '/typescript/introduction',
-          },
-          {
-            title: '安装',
-            path: '/typescript/typescript_env',
-          },
-          {
-            title: '基础概念',
-            path: '/typescript/concept',
-          },
-          {
-            title: '接口',
-            path: '/typescript/interface',
-          },
-          {
-            title: '数组的类型',
-            path: '/typescript/array',
-          },
-          {
-            title: '函数的类型',
-            path: '/typescript/func',
-          },
-          {
-            title: '类型断言',
-            path: '/typescript/assert',
-          },
-          {
-            title: '声明文件',
-            path: '/typescript/declare',
+            title: '信息加密',
+            path: '/business/encryption',
           },
         ],
       },
       {
         title: '基础模块',
-        // path: '/base/',
         collapsable: false,
         children: [
           {
             title: 'Buffer缓冲区',
             path: '/base/buffer',
+          },
+        ],
+      },
+      {
+        title: 'Nest.js',
+        collapsable: false,
+        children: [
+          {
+            title: 'Introduce',
+            path: '/nest/introduce',
+          },
+          {
+            title: '环境变量',
+            path: '/nest/config',
+          },
+          {
+            title: 'ORM',
+            path: '/nest/orm',
+          },
+          {
+            title: '装饰器',
+            path: '/nest/decorator',
+          },
+          {
+            title: '守卫',
+            path: '/nest/guards',
+          },
+          {
+            title: '拦截器',
+            path: '/nest/interceptor',
+          },
+          {
+            title: 'JWT鉴权',
+            path: '/nest/jwt_auth',
+          },
+          {
+            title: '权限/CASL',
+            path: '/nest/casl_auth',
+          },
+          {
+            title: 'swagger接口文档',
+            path: '/nest/swagger',
+          },
+        ],
+      },
+      {
+        title: '数据库',
+        collapsable: false,
+        children: [
+          {
+            title: '实体关系图(ERD)',
+            path: '/database/ERD',
           },
         ],
       },
