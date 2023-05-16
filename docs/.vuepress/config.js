@@ -33,6 +33,10 @@ module.exports = {
             title: '信息加密',
             path: '/business/encryption',
           },
+          {
+            title: 'Telegram交互',
+            path: '/business/telegram_push',
+          },
         ],
       },
       {
@@ -84,6 +88,10 @@ module.exports = {
           {
             title: 'swagger接口文档',
             path: '/nest/swagger',
+          },
+          {
+            title: 'winston日志',
+            path: '/nest/winston_log',
           },
         ],
       },
