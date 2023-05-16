@@ -1,5 +1,5 @@
 ---
-title: "ORM"
+title: "TypeORM"
 ---
 
 <span class="e-1">ORM(Object Relational Mapping)</span>对象关系映射，其主要作用是在编程中，把面向对象的概念跟数据库中的概念对应起来。
@@ -10,3 +10,4 @@ title: "ORM"
 ## 参考
 
 - [TypeORM 中文文档](https://typeorm.devjs.cn/)
+- [TypeORM 中的模糊查询用法](https://github.com/nest-cn-community/issues-box/issues/3)

@@ -24,3 +24,22 @@ getUsers(): any {
   // 逻辑代码
 }
 ```
+
+## 装饰器聚合
+
+```typescript
+import { applyDecorators } from '@nestjs/common';
+
+export function Auth(...roles: Role[]) {
+  return applyDecorators(
+    SetMetadata('roles', roles),
+    UseGuards(AuthGuard, RolesGuard),
+    ApiBearerAuth(),
+    ApiUnauthorizedResponse({ description: 'Unauthorized"' })
+  );
+}
+```
+
+## 参考
+
+- [装饰器聚合](https://docs.nestjs.cn/9/customdecorators?id=%e4%bd%bf%e7%94%a8%e7%ae%a1%e9%81%93)

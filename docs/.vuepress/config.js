@@ -62,7 +62,7 @@ module.exports = {
             path: '/nest/config',
           },
           {
-            title: 'ORM',
+            title: 'TypeORM',
             path: '/nest/orm',
           },
           {
@@ -92,6 +92,10 @@ module.exports = {
           {
             title: 'winston日志',
             path: '/nest/winston_log',
+          },
+          {
+            title: 'redis配置',
+            path: '/nest/redis',
           },
         ],
       },

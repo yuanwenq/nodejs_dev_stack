@@ -17,7 +17,7 @@ title: "守卫"
 ### 创建
 
 ```shell
-nest g gu path/file --no-spec --no-flat
+nest g gu path/file --no-spec --flat
 ```
 
 ### 例子
@@ -62,14 +62,22 @@ app.useGlobalGuards(xxxx);
 @Module({
   imports: [...],
   controllers: [],
-  providers: [..., {
-    provide: APP_GUARD,
-    useClass: AdminGuard
-  }],
+  providers: [
+    ...,
+    {
+      provide: APP_GUARD,
+      useClass: AdminGuard,
+    },
+    {
+      provide: APP_GUARD,
+      useClass: JwtGuard,
+    }
+  ],
   exports: [Logger],
 })
 export class AppModule {}
 ```
+如果存在多个守卫，执行顺序为从上到下，索引越少执行越早。上面执行顺序为：<span class="e-1">AdminGuard</span>，<span class="e-1">JwtGuard</span>
 
 ## 参考
 
